@@ -56,7 +56,7 @@ public:
         double average = (count > 0) ? (totalRating / count) : 0;
         cout << "    > Average: " << average << endl;
     }
-     ReviewList() {
+     ~ReviewList() {
         ReviewNode* current = head;
         while (current != nullptr) {
             ReviewNode* nextNode = current->next;
