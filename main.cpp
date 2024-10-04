@@ -53,7 +53,29 @@ public:
      ReviewList() {
         ReviewNode* current = head;
         while (current != nullptr) {
-            ReviewNode* nextNode
-
-
+            ReviewNode* nextNode = current->next;
+            delete current;
+            current = nextNode;
+        }
     }
+};
+
+int main() {
+    ReviewList reviews;
+    int choice;
+
+    cout << "Which linked list method should we use?" << endl;
+    cout << "    [1] New nodes are added at the head of the linked list" << endl;
+    cout << "    [2] New nodes are added at the tail of the linked list" << endl;
+    cout << "    Choice: ";
+    cin >> choice;
+
+    char moreReviews;
+    do {
+        double rating;
+        string comment;
+
+        cout << "Enter review rating 0
+
+
+    
