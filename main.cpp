@@ -1,6 +1,26 @@
 // Lab 18: Movie Reviews
 // COMSC-210 - Ibrahim Alatig 
 
+//      UML
+//    ReviewNode    
+//
+// - rating: double 
+// - comment: string
+// - next: ReviewNode* 
+//
+                
+//   ReviewList     
+//
+// - head: ReviewNode* 
+// - tail: ReviewNode* 
+// - count: int        
+// ------------------
+// + ReviewList()     
+// + addAtHead(rating: double, comment: string) 
+// + addAtTail(rating: double, comment: string) 
+// + outputReviews()  
+// + ~ReviewList()    
+
 #include <iostream>
 #include <string>
 
