@@ -88,6 +88,15 @@ int main() {
             reviews.addAtTail(rating, comment);
         }
 
+        cout << "Enter another review? Y/N: ";
+        cin >> moreReviews;
+
+    } while (tolower(moreReviews) == 'y');
+
+    reviews.outputReviews();
+    return 0;
+}
+
 
 
     
