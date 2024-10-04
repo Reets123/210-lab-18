@@ -17,5 +17,21 @@ public:
 
     void addAtHead(double rating, const string& comment) {
         ReviewNode* newNode = new ReviewNode{rating, comment, head};
-        head = newN
+        head = newNode;
+        if (tail == nullptr) {
+            tail == newNode
+        }
+        count++;
+    }
+
+    void addAtTail(double rating, const string& comment){
+        ReviewNode* newNode = new ReviewNode{rating, comment, nullptr};
+        if (tail == nullptr) {
+            head = tail = newNode;
+            else{
+                tail->next = newNode;
+                tail = newNode;
+            }
+            count+;
+        }
     }
