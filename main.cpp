@@ -32,6 +32,20 @@ public:
                 tail->next = newNode;
                 tail = newNode;
             }
-            count+;
+            count++;
         }
+    }
+
+    void outputReviews() {
+        ReviewNode* current = head;
+        double totalRating = 0;
+
+        cout <<  "Outputting all reviews:" << endl;
+        for (int i = 1; current != nullptr; i++) {
+            cout << "    > Review #" << i << ": " << current->rating << ": " << current->comment << endl;
+            totalRatings += current->rating;
+            current = current->next;
+        }
+
+
     }
