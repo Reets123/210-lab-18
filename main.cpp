@@ -75,7 +75,19 @@ int main() {
         double rating;
         string comment;
 
-        cout << "Enter review rating 0
+        cout << "Enter review rating 0-5: ";
+        cin >> rating;
+
+        cout << "Enter review comments: ";
+        cin.ignore(); // Clear input buffer
+        getline(cin, comment);
+
+        if (choice == 1) {
+            reviews.addAtHead(rating, comment);
+        } else {
+            reviews.addAtTail(rating, comment);
+        }
+
 
 
     
