@@ -120,5 +120,6 @@ int main() {
     } while (tolower(moreReviews) == 'y');
 
     reviews.outputReviews();
+    
     return 0;
 }
